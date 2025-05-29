@@ -4,8 +4,6 @@ body {
   background: #fff;
 }
 
-
-
 .container {
   width: 100%;
       background-image: url('placeholders/placeholder_2550x550.png');
@@ -23,11 +21,6 @@ body {
   text-align: right;
 }
  
-.text h1 {
-  font-size: 40px;
-  
-}
-
 .text button {
   background-color: #cccccc;
   color: #fff;
@@ -37,11 +30,8 @@ body {
   cursor: pointer;
 }
 
-
-
 .grid {
   display: grid;
-  /* padding: 50px; */
   padding-top: 50px;
   background-color: #fff;
   grid-template-columns: repeat(2, 650px);
@@ -78,31 +68,51 @@ body {
   text-align: center;
 }
 
-/* .featured-products {
-  padding: 60px 40px;
-  text-align: center;
-}
-.product-item {
-  width: 600px;
-  max-width: 100%;
-  text-align: center;
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.product-item .placeholder {
-  background-color: #ccc;
-  color: #ffffff;
-  width: 600px;
-  height: 400px;
-  font-size: 40px;
-  font-weight: 400;
+.carousel-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px auto;
+  transition: transform 0.4s ease;
+  gap: 30px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none; 
 }
 
-.product-item p {
-  font-size: 16px;
-  margin: 0;
-  letter-spacing: 0.5px;
-} */
+.product25x50 {
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.placeholder img {
+  width: 100%;
+  height: auto;
+}
+

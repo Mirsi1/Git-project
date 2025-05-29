@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css" />
+  
+
 </head> 
 <body>
     <div class="container">
       <div class="text">
-        <h1>Add color to your <br> masterpiece</h1>
+        <h1 style="font-size: 40px">Add color to your <br> masterpiece</h1>
         <button>Shop Now</button>
       </div>
     </div>
@@ -35,32 +37,38 @@
   
   <h2 style="padding: 60px 40px;text-align: center;">FEATURED PRODUCTS</h2>
   
-  <div class="flex">
+  
+    <div class="carousel-container">
+  <button class="carousel-btn prev">&#10094;</button>
+  <div class="carousel-track">
     <div class="product25x50">
       <div class="placeholder">
-        <img src="placeholders/placeholder_255x500.png" alt="example1">
+        <img src="placeholders/placeholder_255x500.png" alt="example1" />
       </div>
       <p>EMBROIDERY STABILIZER</p>
     </div>
-        <div class="product25x50">
+    <div class="product25x50">
       <div class="placeholder">
-        <img src="placeholders/placeholder_255x500.png" alt="example1">
+        <img src="placeholders/placeholder_255x500.png" alt="example2" />
       </div>
       <p>CUBBIE GREY ELEPHANT</p>
     </div>
-        <div class="product25x50">
+    <div class="product25x50">
       <div class="placeholder">
-        <img src="placeholders/placeholder_255x500.png" alt="example1">
+        <img src="placeholders/placeholder_255x500.png" alt="example3" />
       </div>
       <p>KIMBERBELL CUP OF CHEER</p>
     </div>
-        <div class="product25x50">
+    <div class="product25x50">
       <div class="placeholder">
-        <img src="placeholders/placeholder_255x500.png" alt="example1">
+        <img src="placeholders/placeholder_255x500.png" alt="example4" />
       </div>
       <p>KIMBERBELL TWO SCOOPS</p>
     </div>
   </div>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
+  <script src="script.js"></script>
 
 </body>
 </html>
